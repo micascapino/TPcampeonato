@@ -7,4 +7,8 @@ public class team {
     private String country;
     private int rankingPosition;
     private Set<teamMember> teamList;
+
+    public String getName() {
+        return name;
+    };
 }
