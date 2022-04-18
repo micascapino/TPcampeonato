@@ -3,13 +3,13 @@ package classes;
 import java.util.Date;
 import java.util.Random;
 
-public class match {
+public class Match {
     private Date date;
-    private team local;
-    private team visitor;
-    private referee ref;
+    private Team local;
+    private Team visitor;
+    private Referee ref;
 
-    public void result(team local, team visitor) {
+    public void result(Team local, Team visitor) {
         Random randomGenerator = new Random();
         int localGoal = randomGenerator.nextInt(10);
         int visitorGoal = randomGenerator.nextInt(10);

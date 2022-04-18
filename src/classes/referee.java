@@ -1,5 +1,5 @@
 package classes;
 
-public class referee extends person {
+public class Referee extends Person {
     private int years;
 }

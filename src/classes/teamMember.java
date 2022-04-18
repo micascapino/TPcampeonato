@@ -1,5 +1,5 @@
 package classes;
 
-public abstract class teamMember extends person{
+public abstract class TeamMember extends Person{
     
 }

@@ -1,5 +1,5 @@
 package classes;
 
-public class dt extends teamMember{
+public class DT extends TeamMember{
     private int titles;
 }
