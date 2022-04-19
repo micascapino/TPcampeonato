@@ -9,4 +9,13 @@ public class DT extends TeamMember{
     }
 
     private int titles;
+
+    public int getTitles() {
+        return titles;
+    }
+
+    public void setTitles(int titles) {
+        this.titles = titles;
+    }
+
 }

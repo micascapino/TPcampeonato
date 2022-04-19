@@ -10,5 +10,18 @@ public class Referee extends Person {
 
     private int years;
 
+    public int getYears() {
+        return years;
+    }
+
+    public void setYears(int years) {
+        this.years = years;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " Referee: [Years on service:" + years +"] ";
+    }
+
 
 }
