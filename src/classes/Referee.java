@@ -1,9 +1,9 @@
 package classes;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Referee extends Person {
-    public Referee(String name, Date birthDate, String typeDNI, String dNI, String nationality, int years) {
+    public Referee(String name, LocalDate birthDate, String typeDNI, String dNI, String nationality, int years) {
         super(name, birthDate, typeDNI, dNI, nationality);
         this.years = years;
     }

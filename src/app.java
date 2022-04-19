@@ -1,6 +1,4 @@
-
-import java.time.Instant;
-import java.util.Date;
+import java.time.LocalDate;
 
 import classes.Match;
 import classes.Player;
@@ -15,21 +13,21 @@ class app {
         Team boquita = new Team("Boquita", "Argentina", 1);
         Team river = new Team("River","Argentina",2);
 
-        Player riquelme = new Player("Juan Roman Riquelme", Date.from(Instant.now()), "DNI", "129230242", "Argentina",
+        Player riquelme = new Player("Juan Roman Riquelme", LocalDate.of(1970, 3, 2) , "DNI", "129230242", "Argentina",
                 Positions.FORWARD, 90);
         boquita.addMember(riquelme);
 
-        Player palermo = new Player("Martin Palermo", Date.from(Instant.now()), "DNI", "34012934", "Argentina",
+        Player palermo = new Player("Martin Palermo", LocalDate.of(1980, 3, 2), "DNI", "34012934", "Argentina",
         Positions.FORWARD, 91);
         boquita.addMember(palermo);
 
-        Player alvarez = new Player("Julian Alvarez", Date.from(Instant.now()), "DNI", "40012934", "Argentina",
+        Player alvarez = new Player("Julian Alvarez", LocalDate.of(1983, 3, 2), "DNI", "40012934", "Argentina",
         Positions.FORWARD, 91);
         river.addMember(alvarez);
 
-        Referee pitana = new Referee("Nestor Pitana", Date.from(Instant.now()), "DNI", "99012934", "Argentina", 15);
+        Referee pitana = new Referee("Nestor Pitana", LocalDate.of(1942, 3, 2), "DNI", "99012934", "Argentina", 15);
 
-        Match first = new Match(Date.from(Instant.now()), boquita,river,pitana);
+        Match first = new Match(LocalDate.now(), boquita,river,pitana);
         first.result();
 
     };

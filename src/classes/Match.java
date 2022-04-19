@@ -1,26 +1,26 @@
 package classes;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Random;
 
 public class Match {
-    private Date date;
+    private LocalDate date;
     private Team local;
     private Team visitor;
     private Referee ref;
 
-    public Match(Date date, Team local, Team visitor, Referee ref) {
+    public Match(LocalDate date, Team local, Team visitor, Referee ref) {
         this.date = date;
         this.local = local;
         this.visitor = visitor;
         this.ref = ref;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

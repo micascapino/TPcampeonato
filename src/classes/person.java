@@ -1,14 +1,14 @@
 package classes;
-import java.util.Date;
+import java.time.LocalDate;
 
 public abstract class Person{
     private String name;
-    private Date birthDate;
+    private LocalDate birthDate;
     private String typeDNI;
     private String DNI;
     private String nationality;
 
-    public Person(String name, Date birthDate, String typeDNI, String dNI, String nationality) {
+    public Person(String name, LocalDate birthDate, String typeDNI, String dNI, String nationality) {
         this.name = name;
         this.birthDate = birthDate;
         this.typeDNI = typeDNI;
@@ -24,11 +24,11 @@ public abstract class Person{
         this.name = name;
     }
 
-    public Date getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 

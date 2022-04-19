@@ -1,9 +1,9 @@
 package classes;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class DT extends TeamMember{
-    public DT(String name, Date birthDate, String typeDNI, String dNI, String nationality, int titles) {
+    public DT(String name, LocalDate birthDate, String typeDNI, String dNI, String nationality, int titles) {
         super(name, birthDate, typeDNI, dNI, nationality);
         this.titles=titles;
     }
