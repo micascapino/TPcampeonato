@@ -31,8 +31,7 @@ class app {
 
         Match first = new Match(Date.from(Instant.now()), boquita,river,pitana);
         first.result();
-        first.toString();
-        //System.out.println(boquita.toString());
+
     };
 
 }
