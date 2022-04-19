@@ -18,4 +18,8 @@ public class Team {
     public String getName() {
         return name;
     };
+
+    public void addMember(TeamMember tm) {
+        teamList.add(tm);
+    }
 }
